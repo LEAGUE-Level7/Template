@@ -22,14 +22,17 @@ public class LocController {
         this.locService = locService;
     }
 
-    @GetMapping("/search")
+    @GetMapping("/yoda")
     @Operation(summary = "Searches for articles matching the search term")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Result(s) found"),
             @ApiResponse(responseCode = "404", description = "Result(s) not found")
     })
     public String getResults(@RequestParam(value="q") String query){
-        return locService.getResults(query);
+        if(query.length()>0) {
+            return locService.getYodaSpeak(query);
+        }
+        return "Please Input String";
     }
 }
 
