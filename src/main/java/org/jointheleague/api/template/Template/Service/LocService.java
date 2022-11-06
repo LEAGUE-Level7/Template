@@ -32,7 +32,7 @@ public class LocService {
     boolean debug = false;
 
     public String getYodaSpeak(String query) {
-        //it works
+
         end = "";
         verb = "";
         words = new String[0];
