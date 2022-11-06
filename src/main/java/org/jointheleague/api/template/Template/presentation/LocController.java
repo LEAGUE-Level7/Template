@@ -33,7 +33,6 @@ public class LocController {
             return locService.getYodaSpeak(query);
         }
         return "Please Input String";
-
     }
 }
 

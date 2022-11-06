@@ -64,7 +64,7 @@ public class LocService {
 
                 } else {
                     if(debug)System.out.println("Verb isn't last");
-                    if(debug)System.out.println("everything after verb: <"+sentence[i].substring(sentence[i].indexOf(verb) + verb.length() + 1)+">");
+                    if(debug)System.out.println("everything after verb: "+sentence[i].substring(sentence[i].indexOf(verb) + verb.length() + 1));
                     if(words[verbLoc+1].equals("to")){
                         sentence[i] = sentence[i].substring(
                                 sentence[i].indexOf(verb) +
@@ -107,7 +107,7 @@ public class LocService {
 
             } else {
                 if(debug)System.out.println("Verb isn't last");
-                if(debug)System.out.println("everything after verb: <"+sentence.substring(sentence.indexOf(verb) + verb.length() + 1)+">");
+                if(debug)System.out.println("everything after verb: "+sentence.substring(sentence.indexOf(verb) + verb.length() + 1));
                 if(debug)System.out.println(sentence.indexOf(verb));
                 if(words[verbLoc+1].equals("to")){
                     sentence = sentence.substring(
