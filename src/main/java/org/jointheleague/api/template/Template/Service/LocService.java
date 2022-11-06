@@ -29,7 +29,7 @@ public class LocService {
     //String answer = "";
     String verb = "";
     String[] words = new String[0];
-    boolean debug = true;
+    boolean debug = false;
 
     public String getYodaSpeak(String query) {
         end = "";
@@ -45,7 +45,7 @@ public class LocService {
                     sentence[i] = sentence[i].substring(0, 1).toLowerCase() + sentence[i].substring(1);
                 }
                 words = sentence[i].split(" ");
-                System.out.println(words[0]);
+                if(debug)System.out.println(words[0]);
                 for (int j = 0; j < words.length; j++) {
                     if (!verbFound&&(answer.contains('"' + words[j] + '"'))) {
                         verb = words[j];
