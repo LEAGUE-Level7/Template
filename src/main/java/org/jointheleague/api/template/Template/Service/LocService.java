@@ -13,7 +13,7 @@ public class LocService {
     //final String verbAPI = "https://raw.githubusercontent.com/Drulac/English-Verbs-Conjugates/master/verbs-conjugations.json";
     //private final WebClient webClient = WebClient.builder().baseUrl(verbAPI).build();
     String end = "";
-    File file = new File("C:\\Users\\beckh\\IdeaProjects\\Template\\src\\main\\java\\org\\jointheleague\\api\\template\\Template\\Verbs");
+    File file = new File("/home/ubuntu/Template/src/main/java/org/jointheleague/api/template/Template/Verbs");
     BufferedReader br;
     String answer = "";
     {
